@@ -7,7 +7,6 @@ const UserForm = (props) => {
 
   const addUser = (e) => {
     e.preventDefault();
-    console.log("this is a test");
 
     const user = {
       id: Math.random(),
@@ -15,6 +14,9 @@ const UserForm = (props) => {
       age: age,
     };
     props.onAddUser(user);
+
+    setUsername("");
+    setAge("");
   };
 
   const onChangeUserName = (e) => {
@@ -33,11 +35,11 @@ const UserForm = (props) => {
     <form className="form" onSubmit={addUser}>
       <div className="input">
         <label>Username</label>
-        <input type="text" onChange={onChangeUserName} />
+        <input type="text" onChange={onChangeUserName} value={username} />
       </div>
       <div className="input">
         <label>Age (Years)</label>
-        <input type="number" onChange={onChangeAge} />
+        <input type="number" onChange={onChangeAge} value={age} />
       </div>
       <Button type="button" text={"Add User"} />
     </form>

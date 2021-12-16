@@ -1,6 +1,7 @@
+import "./UserListItem.css";
 const UserListItem = (props) => {
   return (
-    <div>
+    <div className="user">
       {props.name} {props.age}
     </div>
   );

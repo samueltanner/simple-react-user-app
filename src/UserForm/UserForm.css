@@ -1,10 +1,9 @@
 .form {
-  background-color: white;
-  border-radius: 5px;
-  border-width: 1px;
-  border-color: black;
-  border-style: solid;
-  width: 30%;
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 /* 
 
